@@ -62,7 +62,7 @@ transform = transforms.Compose([
 ])
 
 # Gets dataset from the folder
-dataset = datasets.ImageFolder(root="Humans", transform=transform)
+dataset = datasets.ImageFolder(root="enter/dataroot/here", transform=transform)
 print("Successfully loaded dataset")
 loader = DataLoader(dataset, batch_size=BATCH_SIZE, shuffle=True)
 gen = Generator(NOISE_DIM, CHANNELS_IMG, FEATURES_GEN).to(device)
